@@ -1,0 +1,81 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5873618800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "user navigate to eocean site to login",
+        "description": "",
+        "id": "user-login-feature;user-navigate-to-eocean-site-to-login",
+        "after": [
+          {
+            "result": {
+              "duration": 779316000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4204388400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "navigate to the website",
+            "match": {
+              "location": "LoginSteps.navigate_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2942999200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user has to login",
+            "match": {
+              "location": "LoginSteps.userHasToLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60332306700,
+              "error_message": "managers.FrameworkException: Unknown exception occured while click on: click on my account---class managers.FrameworkException---Element state: *  \u0027enableProxy element for: DefaultElementLocator \u0027By.id: \u0027\u0027 not found within defined time limit.\r\n\tat utilities.BaseTest.clickElement(BaseTest.java:54)\r\n\tat PageObjects.LoginPage.logout(LoginPage.java:43)\r\n\tat StepsDefinitions.LoginSteps.logoutUser(LoginSteps.java:30)\r\n\tat ✽.And logout user(Login.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "logout user",
+            "match": {
+              "location": "LoginSteps.logoutUser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "user login feature",
+    "description": "",
+    "id": "user-login-feature",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]
